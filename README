@@ -20,3 +20,6 @@ packages.txt
 pandoc.txt
   Pandoc a universal document converter
   https://pandoc.org/
+
+pdf/
+  Portable document format files
