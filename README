@@ -8,6 +8,9 @@ Filelist
 00INSTALL/
   Installaton of Pandoc on Debian 9.9 stretch
 
+docs/
+  Documentation
+
 links.txt
   Pandoc related links
 
