@@ -11,6 +11,12 @@ Filelist
 links.txt
   Pandoc related links
 
+packages.txt
+  Pandoc packages for Debian 9.9 stretch
+
+  pandoc - general markup converter
+  pandoc-data - general markup converter - data files
+
 pandoc.txt
   Pandoc a universal document converter
   https://pandoc.org/
