@@ -5,6 +5,9 @@ Copyright (C) 2019 by Raymond E. Marcil <marcilr@gmail.com>
 
 Filelist
 ========
+00INSTALL/
+  Installaton of Pandoc on Debian 9.9 stretch
+
 links.txt
   Pandoc related links
 
