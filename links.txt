@@ -11,3 +11,6 @@ Links
 pandoc.txt
   Pandoc a universal document converter
 
+Workflow for converting LaTeX into Open Office / MS Word Format
+  https://tex.stackexchange.com/questions/4145/workflow-for-converting-latex-into-open-office-ms-word-format
+
