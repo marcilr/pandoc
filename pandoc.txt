@@ -1,0 +1,36 @@
+pandoc.txt
+Created Wed Aug  7 11:26:56 AKDT 2019
+Copyright (C) 2019 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Pandoc a universal document converter
+
+"If you need to convert files from one markup format
+into another, pandoc is your swiss-army knife.  Pandoc
+ can convert between the following formats:
+
+...
+TeX formats
+↔︎ LaTeX
+→ ConTeXt
+...
+XML formats
+↔︎ DocBook version 4 or 5
+↔︎ JATS
+→ TEI Simple
+...
+Word processor formats
+↔︎ Microsoft Word docx
+↔︎ OpenOffice/LibreOffice ODT
+→ OpenDocument XML
+→ Microsoft PowerPoint
+..."
+many others
+
+--pandoc.org/
+
+
+Links
+=====
+Pandoc a universal document converter
+https://pandoc.org/
