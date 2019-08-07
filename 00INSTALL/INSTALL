@@ -1,0 +1,99 @@
+INSTALL
+Created Wed Aug  7 11:33:37 AKDT 2019
+Copyright (C) 2019 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Installation of Pandoc on Debian 9.9 stretch
+
+
+1. Install pandoc packages:
+pandoc - general markup converter
+pandoc-data - general markup converter - data files
+
+
+# aptitude install pandoc pandoc-data
+The following NEW packages will be installed:
+  liblua5.1-0{a} libluajit-5.1-2{a} libluajit-5.1-common{a} pandoc pandoc-data 
+0 packages upgraded, 5 newly installed, 0 to remove and 0 not upgraded.
+Need to get 9,724 kB of archives. After unpacking 72.6 MB will be used.
+Do you want to continue? [Y/n/?] Y
+Get: 1 http://ftp.us.debian.org/debian stretch/main amd64 liblua5.1-0 amd64 5.1.5-8.1+b2 [111 kB]
+Get: 2 http://ftp.us.debian.org/debian stretch/main amd64 libluajit-5.1-common all 2.0.4+dfsg-1 [36.6 kB]
+Get: 3 http://ftp.us.debian.org/debian stretch/main amd64 libluajit-5.1-2 amd64 2.0.4+dfsg-1+b1 [207 kB]
+Get: 4 http://ftp.us.debian.org/debian stretch/main amd64 pandoc-data all 1.17.2~dfsg-3 [265 kB]
+Get: 5 http://ftp.us.debian.org/debian stretch/main amd64 pandoc amd64 1.17.2~dfsg-3 [9,104 kB]            
+Fetched 9,724 kB in 19s (493 kB/s)
+Selecting previously unselected package liblua5.1-0:amd64.
+(Reading database ... 192715 files and directories currently installed.)
+Preparing to unpack .../liblua5.1-0_5.1.5-8.1+b2_amd64.deb ...
+Unpacking liblua5.1-0:amd64 (5.1.5-8.1+b2) ...
+Selecting previously unselected package libluajit-5.1-common.
+Preparing to unpack .../libluajit-5.1-common_2.0.4+dfsg-1_all.deb ...
+Unpacking libluajit-5.1-common (2.0.4+dfsg-1) ...
+Selecting previously unselected package libluajit-5.1-2:amd64.
+Preparing to unpack .../libluajit-5.1-2_2.0.4+dfsg-1+b1_amd64.deb ...
+Unpacking libluajit-5.1-2:amd64 (2.0.4+dfsg-1+b1) ...
+Selecting previously unselected package pandoc-data.
+Preparing to unpack .../pandoc-data_1.17.2~dfsg-3_all.deb ...
+Unpacking pandoc-data (1.17.2~dfsg-3) ...
+Selecting previously unselected package pandoc.
+Preparing to unpack .../pandoc_1.17.2~dfsg-3
+Setting up libluajit-5.1-common (2.0.4+dfsg-1) ...
+Setting up pandoc-data (1.17.2~dfsg-3) ...
+Processing triggers for libc-bin (2.24-11+deb9u4) ...
+Setting up libluajit-5.1-2:amd64 (2.0.4+dfsg-1+b1) ...
+Processing triggers for man-db (2.7.6.1-2) ...
+Setting up liblua5.1-0:amd64 (5.1.5-8.1+b2) ...
+Setting up pandoc (1.17.2~dfsg-3) ...
+Processing triggers for libc-bin (2.24-11+deb9u4) ...
+                                         
+# 
+
+
+Looks good
+
+
+2. Verify pandoc installation:
+$ type pandoc
+pandoc is /usr/bin/pandoc
+$ 
+
+$ pandoc --help
+pandoc [OPTIONS] [FILES]
+Input formats:  commonmark, docbook, docx, epub, haddock, html, json*, latex,
+                markdown, markdown_github, markdown_mmd, markdown_phpextra,
+                markdown_strict, mediawiki, native, odt, opml, org, rst, t2t,
+                textile, twiki
+                [ *only Pandoc's JSON version of native AST]
+Output formats: asciidoc, beamer, commonmark, context, docbook, docbook5, docx,
+                dokuwiki, dzslides, epub, epub3, fb2, haddock, html, html5,
+                icml, json*, latex, man, markdown, markdown_github,
+                markdown_mmd, markdown_phpextra, markdown_strict, mediawiki,
+                native, odt, opendocument, opml, org, pdf**, plain, revealjs,
+                rst, rtf, s5, slideous, slidy, tei, texinfo, textile, zimwiki
+                [**for pdf output, use latex or beamer and -o FILENAME.pdf]
+Options:
+  -f FORMAT, -r FORMAT  --from=FORMAT, --read=FORMAT                    
+  -t FORMAT, -w FORMAT  --to=FORMAT, --write=FORMAT                     
+  -o FILENAME           --output=FILENAME                               
+                        --data-dir=DIRECTORY
+  -R                    --parse-raw                                     
+  -S                    --smart                                         
+                        --old-dashes                                    
+                        --base-header-level=NUMBER                      
+                        --indented-code-classes=STRING                  
+  -F PROGRAM            --filter=PROGRAM                                
+                        --normalize                                     
+  -p                    --preserve-tabs                                 
+                        --tab-stop=NUMBER                               
+                        --track-changes=accept|reject|all               
+                        --file-scope                                    
+                        --extract-media=PATH
+...
+                        --bash-completion                               
+  -v                    --version                                       
+  -h                    --help
+$
+
+
+Looks good
