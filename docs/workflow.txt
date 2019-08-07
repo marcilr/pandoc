@@ -1,0 +1,117 @@
+workflow.txt
+Created Wed Aug  7 11:49:07 AKDT 2019
+Copyright (C) 2019 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Workflow for converting LaTeX into Open Office / MS Word Format
+
+
+"I implemented this for a large R&D lab.  We produced several hundred
+(if not thousand) documents per year, and the LaTeX Users' community
+there wanted to be able to produce documents using 'tex as well as
+WYSIWYG software.
+
+The OP was right in that a well-defined workflow is essential.  Part
+of this is the process, but you may also need to think about training
+and using a common repository, and how to implement corporate design.
+
+
+Process
+=======
+We implemented a process that allowed people to work in LaTeX and
+then switch to .docx for collaborators.
+
+1. Define a class file that contains the correct formatting, etc,
+using article, report or book classes. Include the minimum number of
+up-to-date packages in the class and add the nag[1] package to make sure
+that you (and other users) can see that those packages are not
+deprecated.
+
+2. Create a template showing how to use the class file
+
+3. Create an SVN (or git, or whatever) repository for the class and
+template files, and distribute the URL of the repository to LaTeX users
+
+4. Create documents using the lab-standard class file
+
+5. Convert the tex files to .docx using Pandoc[2], which works on
+Windows, Mac, and Linux
+
+6. Get edits and peer reviews done on the .docx
+
+7. Transfer edits from the .doc or .docx document back in to 'tex
+manually, and complete the PDF production in LaTeX.
+
+8. Tagging the document using Adobe Acrobat for Section 508
+compliance (accessibility).
+
+N.B. Using one of the web-based editors like sharelatex.com[3]
+or overleaf.com[4] can remove the need for 5-7, especially
+now that they have rather good review tools.
+
+
+Challenges
+==========
+There were a couple of challenges we had to face to get this
+adopted.
+
+1. Getting the editors and reviewers something that fit with
+their existing process, hence the use of the .docx format
+
+2. Figuring out how to get the same class file(s) to all
+users, hence the SVN repository
+
+3. Making sure people know how to use it, hence the template
+
+4. Figuring out tools that let people collaborate.  But that's
+a whole other post!
+
+
+508 Compliance / Structured PDFs
+================================
+The one thing that is still causing trouble is 508-compliance.
+I have been working (slowly) on using the pdfcomment package
+to add tooltips and modifying the accessibility package so that
+documents are accessible.  My test PDF documents sometimes pass
+automated testing in Adobe Acrobat...
+
+
+Repository
+==========
+I've put a set of demo documents in a Github repository[5]
+which may be helpful.
+
+
+Note re. Pandoc
+===============
+3 Dec 2017: Originally I suggested the use of latex2rtf instead
+of Pandoc.  I am now editting this answer to suggest Pandoc as
+I find Pandoc is kept up to date, works well, and I like the
+flexibility to choose from many more input and output file types.
+
+--edited Dec 3 '17 at 9:07
+  answered Apr 18 '13 at 16:01, Andy Clifton
+
+  Workflow for converting LaTeX into Open Office / MS Word Format
+  https://tex.stackexchange.com/questions/4145/workflow-for-converting-latex-into-open-office-ms-word-format
+
+
+Links
+=====
+[1] nag package
+http://www.ctan.org/tex-archive/macros/latex/contrib/nag
+
+[2] Pandoc
+https://pandoc.org/
+
+[3] sharelatex.com
+https://www.sharelatex.com/
+
+[4] overleaf.com
+https://www.overleaf.com/
+
+[5] Github repository
+https://github.com/AndyClifton/CorporateLaTeX
+
+Workflow for converting LaTeX into Open Office / MS Word Format
+https://tex.stackexchange.com/questions/4145/workflow-for-converting-latex-into-open-office-ms-word-format
