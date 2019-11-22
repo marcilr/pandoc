@@ -8,6 +8,9 @@ Pandoc related links
 
 Links
 =====
+Producing doc/docx from LaTeX [duplicate]
+https://tex.stackexchange.com/questions/8836/producing-doc-docx-from-latex
+
 pandoc.txt
   Pandoc a universal document converter
 
