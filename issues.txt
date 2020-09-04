@@ -1,0 +1,37 @@
+issues.txt
+Created Fri 04 Sep 2020 10:31:28 AM AKDT
+Copyright (C) 2020 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Issues with pandoc latex conversion to doc or docx
+
+
+From conversion of git/tex/template/template.tex to docx 
+using:
+
+$ pandoc template.tex -o template.docx
+Observe the following issues in the resultant docx:
+
+o All the headings are grey not black
+o Lost abstract on 1st page
+o Lost diagonal DRAFT notice on 1st page
+o Lost DRAFT notice on bottom of all subsequent pages
+o Lost Contents on 2nd page
+o Lost page numbers
+o List of Definitions and Abbreviations from 4th page to 1st page
+o Introduction from th page to 1st page
+
+Benefits:
+o Kept footnotes
+o Verbatim looks great
+o Kept Appendix
+
+
+$ pandoc template.tex -o template.doc
+Appears to have less issues:
+o Keeps headers black
+o Looses page numbers
+o Looses individual pages
+
+
+
