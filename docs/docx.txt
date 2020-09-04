@@ -1,0 +1,26 @@
+docx.txt
+Created Fri 04 Sep 2020 11:00:40 AM AKDT
+Copyright (C) 2020 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Microsoft docx format
+
+
+How to replace a word inside a .DOCX file using Linux command line?
+
+"So, you want to replace things in a brand-specific format? 
+At the first look it looks bad, but the new docx format is 
+a bit better for that than the old doc format, because it's 
+actually a ZIP file containing XML files.
+
+So the answer lies in unzipping it, then you'll have to 
+rummage through the files and figure out on which one to 
+call sed and zip it up again.
+
+Check out the file word/document.xml in the ZIP file."
+--edited Oct 17 '16 at 15:02
+  Pabru
+--answered Oct 17 '16 at 6:58
+  orion
+UNIX & LINUX
+https://unix.stackexchange.com/questions/316891/how-to-replace-a-word-inside-a-docx-file-using-linux-command-line
