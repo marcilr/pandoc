@@ -11,6 +11,9 @@ Filelist
 docs/
   Documentation
 
+issues.txt
+  Issues with pandoc latex conversion to doc or docx
+
 links.txt
   Pandoc related links
 
