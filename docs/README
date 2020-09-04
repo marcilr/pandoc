@@ -5,6 +5,9 @@ Copyright (C) 2019 by Raymond E. Marcil <marcilr@gmail.com>
 
 Filelist
 ========
+docx.txt
+  Microsoft docx format
+
 workflow.txt
   Workflow for converting LaTeX into Open Office / MS Word Format
   https://tex.stackexchange.com/questions/4145/workflow-for-converting-latex-into-open-office-ms-word-format
